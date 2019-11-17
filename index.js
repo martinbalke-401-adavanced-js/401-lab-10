@@ -4,4 +4,4 @@
 require('dotenv').config();
 
 // Start the server
-require('./lib/server.js').start(3000);
+require('./lib/server.js').start(process.env.PORT);

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "lint": "eslint \"**/*.js\" --fix",
     "watch": "nodemon index.js",
     "test-watch": "jest --watchAll",
     "test": "jest"
@@ -13,7 +14,7 @@
     "testEnvironment": "node"
   },
   "keywords": [],
-  "author": "",
+  "author": "Martin Balke",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.2",
