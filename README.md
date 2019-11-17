@@ -51,3 +51,7 @@ Link to an image of the UML for your application and response to events
 `Currently, the client is just sending us an object  containing the username and password to us, which is why we can just pass along (req.body). What is a better way to do this?`
 
 I think a better way to handle this would be to base encode the information and send it in the request headers.
+
+`What does .isModified do and why do we use it?`
+
+isModified is a built in mongoose function which checks an input against the data that is saved in the database and returns a boolean. We're using it here to allow us to check if the user has changed their password so that if they do we can resave it.
