@@ -1,4 +1,4 @@
-# LAB - 09
+# LAB - 10
 
 ## API server
 
@@ -10,10 +10,6 @@
 * [back-end](http://xyz.com) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
 #### `modulename.js`
@@ -55,3 +51,7 @@ I think a better way to handle this would be to base encode the information and 
 `What does .isModified do and why do we use it?`
 
 isModified is a built in mongoose function which checks an input against the data that is saved in the database and returns a boolean. We're using it here to allow us to check if the user has changed their password so that if they do we can resave it.
+
+` What are the pros and cons of setting res.cookie?`
+
+Setting a cookie allows you to persist the users log in acrossed multiple pages but doing that is not very secure.
